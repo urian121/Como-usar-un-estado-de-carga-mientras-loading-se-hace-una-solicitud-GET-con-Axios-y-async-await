@@ -1,12 +1,12 @@
 
-let data            = {}; /**Defino array vacio */
+let data            = {}; /**Defino un objeto vacio */
 let loading         = false; /**Defino el estado inicial de mi loading */
 let URL_API         = 'https://fakestoreapi.com/users';
-let divData         = document.querySelector("#data");
-let capaCargando    = document.querySelector(".contentLoading");
+let divData         = document.querySelector("#data"); //Elemento HTML para mostrar mi data
+let capaCargando    = document.querySelector(".contentLoading"); //Contener para mi Pre-Loading
 
 
-document.querySelector('.btnData').addEventListener('click', obtenerDatosAPI);
+let btnCargarData  = document.querySelector('.btnData').addEventListener('click', obtenerDatosAPI);
 
 /**
  * Creo una función asíncrona obtenerDatosAPI que hace una solicitud GET a la URL URL_API
@@ -44,5 +44,7 @@ async function obtenerDatosAPI() {
 function myLoading(loading){
     console.log(`Status myLoading ${loading}`);
     /** Usando operador ternario */
+
     !loading ? capaCargando.style.display ='none' : capaCargando.display ='block';
+   //true o false     ocultando loading                 Mostrando loading
 }
