@@ -10,21 +10,22 @@
 </head>
 
 <body>
-
-    <img src="./assets/imgs/perfil.gif" alt="perfil">
-    <p class="bold700">
-        Cómo usar un estado de carga mientras se hace una solicitud GET con Axios y async/await
-    </p>
-
-    <div class="contentLoading">
-        <img src="assets/imgs/loading.gif">
-        <aside>Cargando...</aside>
-      </div>
-    
-
     <div class="content">
+        <p class="bold700">
+            Cómo usar un estado de carga mientras se hace una solicitud GET 
+            con Axios y async/await
+        </p>
+        <button class="btnData">Cargar mi Data</button>
+
+        <!--Efecto Loading mientras se obtengo mi Data-->    
+        <div class="contentLoading" style="display:none;">
+            <img src="assets/imgs/loading.gif">
+            <aside>Cargando...</aside>
+        </div>
+
+
         <div id="data"></div>
-    </div>  
+    </div>
 
 
 
@@ -34,4 +35,5 @@
 
 
 </body>
+
 </html>
