@@ -1,7 +1,7 @@
 
 let data            = {}; /**Defino un objeto vacio */
 let loading         = false; /**Defino el estado inicial de mi loading */
-let URL_API         = 'https://fakestoreapi.com/users';
+let URL_API         = 'https://jsonplaceholder.typicode.com/photos';
 let divData         = document.querySelector("#data"); //Elemento HTML para mostrar mi data
 let capaCargando    = document.querySelector(".contentLoading"); //Contener para mi Pre-Loading
 
